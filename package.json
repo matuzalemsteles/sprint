@@ -1,0 +1,23 @@
+{
+  "name": "spark-spa",
+  "version": "1.0.0",
+  "description": "Simple Engine SPA.",
+  "license": "MIT",
+  "author": "Matuzalém Teles",
+  "scripts": {
+    "build": "webpack --optimize-minimize",
+    "build:watch": "webpack --optimize-minimize -w",
+    "build:demo": "webpack --optimize-minimize --output-path demo/build"
+  },
+  "keywords": [
+    "spa"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^2.4.1"
+  }
+}

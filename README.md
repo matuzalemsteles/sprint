@@ -5,7 +5,7 @@
 
 # Sprint
 
-- **Tiny:** under **20 bytes** of [ES3](https://unpkg.com/sprint) gzipped
+- **Tiny:** under **20 bytes** of [ES3](https://unpkg.com/sprintjs) gzipped
 
 > 🤔 **What's Missing?**
 > - Use container to wrap new pages.

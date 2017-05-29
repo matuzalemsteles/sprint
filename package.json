@@ -3,24 +3,39 @@
   "version": "0.1.1",
   "description": "Simple Engine SPA.",
   "main": "dist/sprint.js",
-  "minified:main": "dist/sprint.min.js",
-  "jsnext:main": "src/engine.js",
   "license": "MIT",
   "author": "Matuzalém Teles <matuzalemteles@gmail.com>",
   "scripts": {
-    "build": ""
+    "build": "npm-run-all --silent clean -p rollup:umd -p minify:umd -s size",
+    "clean": "rimraf dist && mkdirp dist",
+    "rollup:umd": "rollup -c",
+    "minify:umd": "uglifyjs dist/sprint.js -cm -o dist/sprint.js --in-source-map dist/sprint.js.map --source-map filename=dist/sprint.js.map",
+    "size": "echo \"Gzipped Size: $(strip-json-comments --no-whitespace $npm_package_main | gzip-size)\"",
+    "prepublish": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matuzalemsteles/sprint.git"
   },
   "keywords": [
     "spa",
     "sprint"
   ],
+  "homepage": "https://github.com/matuzalemsteles/sprint",
+  "bugs": {
+    "url": "https://github.com/matuzalemsteles/sprint/issues"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-latest": "^6.24.1",
     "gzip-size-cli": "^2.0.0",
+    "mkdirp": "^0.5.1",
     "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
     "rollup": "^0.41.6",
-    "rollup-plugin-babel": "^2.7.1"
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "uglify-js": "^3.0.13"
   }
 }

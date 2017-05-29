@@ -24,6 +24,33 @@
 - [License](#license)
 
 ## Install
+Install via [yarn](https://yarnpkg.com/lang/en/):
+
+```sh
+$ yarn add sprintjs
+```
+
+Install via [npm](https://www.npmjs.com/):
+
+```sh
+$ npm install --save sprintjs
+```
+
+With a bundler module as a [rollup](https://rollupjs.org/) or [webpack](https://webpack.js.org/), use:
+
+```javascript
+// using ES6 modules
+import sprintjs from 'sprintjs'
+
+// using CommonJS modules
+var sprintjs = require('sprintjs')
+```
+
+The UMD build is also available on [unpkg](https://unpkg.com):
+
+```html
+<script src="//unpkg.com/sprintjs"></script>
+```
 
 ## Usage
 

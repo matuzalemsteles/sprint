@@ -58,12 +58,12 @@ The UMD build is also available on [unpkg](https://unpkg.com):
 <script>
   var Sprint = new sprint(
     {
-  		routes: [
-  			'*.html',
-  			'/site/*'
-  		],
-  		enabled: true,
-  	}
+      routes: [
+        '*.html',
+        '/site/*'
+      ],
+      enabled: true,
+    }
   )
 </script>
 ```

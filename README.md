@@ -20,6 +20,7 @@
 - [Install](#install)
 - [Usage](#usage)
 - [Examples & Demos](#examples--demos)
+- [API](#api)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -53,9 +54,31 @@ The UMD build is also available on [unpkg](https://unpkg.com):
 ```
 
 ## Usage
+```html
+<script>
+  var Sprint = new sprint(
+    {
+  		routes: [
+  			'*.html',
+  			'/site/*'
+  		],
+  		enabled: true,
+  	}
+  )
+</script>
+```
 
 ## Examples & Demos
- - Demo - Check demo folder and start with some http service, for correct operation.
+ - [Demo](demo) - Check demo folder and start with some http service, for correct operation.
+
+## API
+Sprint's big proposition is to provide a familiar API and simple to implement on any static website.
+
+### `sprint(options: Object)`
+Sprint contains the following properties in options:
+
+ * `routes`: An array, routes are added to enable Sprint. Use of the `*` before or after the `/` or `.` The mechanism understands and will process anything forward.
+ * `enabled`: A boolean, true, or false to activate the engine.
 
 ## Contribute
 

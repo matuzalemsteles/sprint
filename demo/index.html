@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SPA</title>
+	<title>Sprint</title>
 	<link rel="stylesheet" href="style.css?1">
 </head>
 <body>
-	<div class="spa"></div>
-	<h1>Single Page Application</h1>
+	<header>
+		<p align="center">
+		  <img src="http://i.imgur.com/jgHKoGM.png" width="300" height="300" alt="sprint">
+		  <br>
+		  <a href="https://www.npmjs.org/package/sprintjs"><img src="https://img.shields.io/npm/v/sprintjs.svg?style=flat" alt="npm"></a>
+		</p>
+		<p align="center">Simple SPA alternative for small web pages in <b>20</b> bytes.</p>
+	</header>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<a href="/details.html">Check out more</a>
-	<a class="link" href="/details.html" data-no-spa>Check out more (no SPA)</a>
-	
-	<script src="./build/bundle.js"></script>
-	<script src="./engine.js"></script>
+	<a class="btn" href="/details.html">Check out more</a>
+	<a class="btn link" href="/details.html" data-no-spa>Check out more (no SPA)</a>
+
+	<script src="//unpkg.com/sprintjs"></script>
+	<script>
+		new sprint(
+			{
+				routes: [
+					'*.html',
+					'/site/*'
+				],
+				enabled: true,
+			}
+		);
+	</script>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-	color: #0069FF;
+	color: #784EEA;
 }
 
 h3 {
@@ -21,7 +21,7 @@ p {
 	margin: 40px 0;
 }
 
-a {
+.btn {
 	display: inline-block;
 	text-decoration: none;
 	color: #ffffff;
@@ -29,12 +29,12 @@ a {
 	line-height: 40px;
 	border-radius: 43px;
 	text-transform: uppercase;
-	background-color: #0069FF;
+	background-color: #784EEA;
 	transition: 0.2s;
 }
 
-a:hover {
-	background-color: #0065f5;
+.btn:hover {
+	background-color: #6D46D9;
 	transition: 0.2s;
 }
 
@@ -47,55 +47,4 @@ a:hover {
 .link:hover {
 	background: transparent;
 	color: #464646;
-}
-
-.spa {
-	width: 120px;
-	height: 120px;
-	display: inline-block;
-	background: linear-gradient(110deg, #5e7696 50%, #0069ff 50%);
-  background-color: #0069FF;
-}
-
-.spa:before {
-	content: 'SPA';
-	color: #fff;
-	font-size: 35px;
-	display: block;
-  text-align: right;
-  padding-right: 9px;
-  margin-top: 77px;
-}
-
-.loading-bar {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  z-index: 800;
-  background: #0069FF;
-  transform: translateX(100%);
-}
-
-.loading-bar.isLoading {
-  display: block;
-  animation: shift-rightwards 1s ease-in-out infinite;
-  animation-delay: .3s;
-}
-
-@keyframes shift-rightwards {
-	0% {
-    transform: translateX(-100%);
-	}
-	40% {
-	  transform: translateX(0);
-	}
-	60% {
-	  transform: translateX(0);
-	}
-	100% {
-	  transform: translateX(100%);
-	}
 }

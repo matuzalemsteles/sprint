@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="http://i.imgur.com/N0g5o4F.png" width="200" height="200" alt="sprint">
+</p>
+
 # Sprint
 
 Simple alternative for small web pages.
@@ -6,8 +10,6 @@ Simple alternative for small web pages.
 > - Use container to wrap new pages.
 > - Simple virtual DOM or reconciliation, call as you wish. 😁
 > - Test Creation
-
-* * *
 
 ## Table of Contents
 

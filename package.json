@@ -1,6 +1,6 @@
 {
   "name": "sprintjs",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Simple SPA alternative for small web pages in 20 bytes.",
   "main": "dist/sprintjs.js",
   "license": "MIT",

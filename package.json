@@ -1,15 +1,15 @@
 {
   "name": "sprintjs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple SPA alternative for small web pages in 20 bytes.",
-  "main": "dist/sprint.js",
+  "main": "dist/sprintjs.js",
   "license": "MIT",
   "author": "Matuzalém Teles <matuzalemteles@gmail.com>",
   "scripts": {
     "build": "npm-run-all --silent clean -p rollup:umd -p minify:umd -s size",
     "clean": "rimraf dist && mkdirp dist",
     "rollup:umd": "rollup -c",
-    "minify:umd": "uglifyjs dist/sprint.js -cm -o dist/sprint.js --in-source-map dist/sprint.js.map --source-map filename=dist/sprint.js.map",
+    "minify:umd": "uglifyjs dist/sprintjs.js -cm -o dist/sprintjs.js --in-source-map dist/sprintjs.js.map --source-map filename=dist/sprintjs.js.map",
     "size": "echo \"Gzipped Size: $(strip-json-comments --no-whitespace $npm_package_main | gzip-size)\"",
     "prepublish": "yarn run build"
   },

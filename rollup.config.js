@@ -12,5 +12,5 @@ export default {
       exclude: 'node_modules/**' // only transpile our source code
     })
   ],
-  dest: 'dist/sprint.js'
+  dest: 'dist/sprintjs.js'
 };

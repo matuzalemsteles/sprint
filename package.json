@@ -1,7 +1,7 @@
 {
   "name": "sprintjs",
-  "version": "0.1.4",
-  "description": "Simple SPA alternative for small web pages in 20 bytes.",
+  "version": "0.1.5",
+  "description": "Simple SPA alternative for small web pages in 2 kB.",
   "main": "dist/sprintjs.js",
   "license": "MIT",
   "author": "Matuzalém Teles <matuzalemteles@gmail.com>",

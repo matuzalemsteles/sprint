@@ -3,11 +3,11 @@
   <br>
   <a href="https://www.npmjs.org/package/sprintjs"><img src="https://img.shields.io/npm/v/sprintjs.svg?style=flat" alt="npm"></a>
 </p>
-<p align="center">Simple SPA alternative for small web pages in <b>20</b> bytes.</p>
+<p align="center">Simple SPA alternative for small web pages in <b>2</b> kB.</p>
 
 # Sprint
 
-- **Tiny:** under **20 bytes** of [ES3](https://unpkg.com/sprintjs) gzipped
+- **Tiny:** under **2 kB** of [ES3](https://unpkg.com/sprintjs) gzipped
 
 > 🤔 **What's Missing?**
 > - Use container to wrap new pages.

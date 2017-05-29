@@ -1,15 +1,17 @@
 <p align="center">
   <img src="http://i.imgur.com/jgHKoGM.png" width="300" height="300" alt="sprint">
 </p>
+<p align="center">Simple SPA alternative for small web pages in <b>20</b> bytes.</p>
 
 # Sprint
 
-Simple alternative for small web pages.
+- **Tiny:** under **20 bytes** of [ES3](https://unpkg.com/sprint) gzipped
 
 > 🤔 **What's Missing?**
 > - Use container to wrap new pages.
 > - Simple virtual DOM or reconciliation, call as you wish. 😁
 > - Test Creation
+> - Create lifecycle
 
 ## Table of Contents
 

@@ -1,7 +1,7 @@
 {
-  "name": "sprint",
+  "name": "sprintjs",
   "version": "0.1.1",
-  "description": "Simple Engine SPA.",
+  "description": "Simple SPA alternative for small web pages in 20 bytes.",
   "main": "dist/sprint.js",
   "license": "MIT",
   "author": "Matuzalém Teles <matuzalemteles@gmail.com>",

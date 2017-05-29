@@ -5,7 +5,7 @@ export default {
   entry: 'src/engine.js',
   format: 'umd',
   sourceMap: true,
-  moduleName: "sprint",
+  moduleName: "sprintjs",
   plugins: [
     resolve(),
     babel({

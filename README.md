@@ -1,5 +1,7 @@
 <p align="center">
   <img src="http://i.imgur.com/jgHKoGM.png" width="300" height="300" alt="sprint">
+  <br>
+  <a href="https://www.npmjs.org/package/sprintjs"><img src="https://img.shields.io/npm/v/sprintjs.svg?style=flat" alt="npm"></a>
 </p>
 <p align="center">Simple SPA alternative for small web pages in <b>20</b> bytes.</p>
 

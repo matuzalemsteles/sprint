@@ -25,6 +25,10 @@
   "bugs": {
     "url": "https://github.com/matuzalemsteles/sprint/issues"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-plugin-external-helpers": "^6.22.0",

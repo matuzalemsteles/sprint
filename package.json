@@ -1,23 +1,26 @@
 {
-  "name": "spark-spa",
-  "version": "1.0.0",
+  "name": "sprint",
+  "version": "0.1.1",
   "description": "Simple Engine SPA.",
+  "main": "dist/sprint.js",
+  "minified:main": "dist/sprint.min.js",
+  "jsnext:main": "src/engine.js",
   "license": "MIT",
-  "author": "Matuzalém Teles",
+  "author": "Matuzalém Teles <matuzalemteles@gmail.com>",
   "scripts": {
-    "build": "webpack --optimize-minimize",
-    "build:watch": "webpack --optimize-minimize -w",
-    "build:demo": "webpack --optimize-minimize --output-path demo/build"
+    "build": ""
   },
   "keywords": [
-    "spa"
+    "spa",
+    "sprint"
   ],
   "devDependencies": {
-    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.24.1",
-    "webpack": "^2.4.1"
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-latest": "^6.24.1",
+    "gzip-size-cli": "^2.0.0",
+    "npm-run-all": "^4.0.2",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1"
   }
 }

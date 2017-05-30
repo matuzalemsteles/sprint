@@ -2,6 +2,8 @@
   <img src="http://i.imgur.com/jgHKoGM.png" width="300" height="300" alt="sprint">
   <br>
   <a href="https://www.npmjs.org/package/sprintjs"><img src="https://img.shields.io/npm/v/sprintjs.svg?style=flat" alt="npm"></a>
+  <a href='https://coveralls.io/github/matuzalemsteles/sprint?branch=master'><img src='https://coveralls.io/repos/github/matuzalemsteles/sprint/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <a href="https://unpkg.com/sprintjs/dist/sprintjs.js"><img src="http://img.badgesize.io/https://unpkg.com/sprintjs/dist/sprintjs.js?compression=gzip" alt="gzip"></a>
 </p>
 <p align="center">Simple SPA alternative for small web pages in <b>2</b> kB.</p>
 

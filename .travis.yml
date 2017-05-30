@@ -21,3 +21,6 @@ install:
 script:
   - npm run build
   - npm run test
+
+# Coveralls
+after_success: npm run coverage

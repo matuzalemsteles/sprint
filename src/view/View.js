@@ -3,7 +3,7 @@
 import Ajax from '../ajax/Ajax';
 import Parser from './Parser';
 
-class Screen {
+class View {
 	constructor() {
 		/**
 		 * Stores the html code of the requested page in raw text.
@@ -34,7 +34,7 @@ class Screen {
 	 * Modify the title and body of the page.
 	 * @chainable
 	 */
-	insertScreen() {
+	insertView() {
 		document.title = this.extractTitle();
 		document.body.innerHTML = this.extractBody();
 
@@ -77,7 +77,7 @@ class Screen {
 			.request(path, 'GET', body, true)
 			.then(result => {
 				this.html = result.responseText;
-				this.insertScreen();
+				this.insertView();
 			})
 			.catch(error => {
 				console.log(error);
@@ -86,4 +86,4 @@ class Screen {
 	}
 }
 
-export default Screen;
+export default View;

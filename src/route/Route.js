@@ -1,6 +1,6 @@
 'use strict';
 
-import Screen from '../screen/Screen';
+import View from '../view/View';
 
 class Route {
 	constructor(path) {
@@ -34,7 +34,7 @@ class Route {
 	 * @chainable
 	 */
 	checkRoutes(event, path, routes, noNavigate = false) {
-		const screen = new Screen();
+		const view = new View();
 
 		const mapRoutes = [].map.call(routes, route => {
 			if (this.routeToRegex(route).exec(path) !== null) {
@@ -42,7 +42,7 @@ class Route {
 				if (!noNavigate) {
 					this.navigate(path);
 				}
-				screen.load();
+				view.load();
 			}
 		});
 	}

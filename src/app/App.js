@@ -36,7 +36,7 @@ class App {
 		 */
 		this.nodeListTags = this.addTagsToArray();
 
-		if (props.enabled) { 
+		if (props.enabled) {
 			this.init();
 			this.onPopState();
 		}
@@ -78,7 +78,7 @@ class App {
 	 */
 	eventButton(event) {
 		this.path = event.target.pathname;
-		if (!event.target.attributes['data-no-spa']) {
+		if (!event.target.attributes[':no-link']) {
 			const router = new Route();
 
 			router.checkRoutes(event, this.path, this.routes);

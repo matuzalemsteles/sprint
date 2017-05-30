@@ -1,4 +1,4 @@
-var engine = new sprint(
+var engine = new sprintjs(
 	{
 		routes: [
 			'*.html',

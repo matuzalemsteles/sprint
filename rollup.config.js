@@ -1,5 +1,17 @@
-import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
+import babelrc from 'babelrc-rollup';
+
+const babelConfig = {
+  'presets': [
+    ['env', {
+      'targets': {
+        'browsers': ['last 2 versions']
+      },
+      'loose': true
+    }]
+  ]
+};
+
 
 export default {
   entry: 'src/engine.js',
@@ -7,10 +19,11 @@ export default {
   sourceMap: true,
   moduleName: "sprintjs",
   plugins: [
-    resolve(),
-    babel({
-      exclude: 'node_modules/**' // only transpile our source code
-    })
+    babel(babelrc({
+      addExternalHelpersPlugin: false,
+      config: babelConfig,
+      exclude: 'node_modules/**'
+    }))
   ],
   dest: 'dist/sprintjs.js'
 };

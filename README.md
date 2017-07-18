@@ -84,7 +84,7 @@ const engine = new Sprint({
 });
 ```
 ## Examples & Demos
- - [Demo](https://codesandbox.io/embed/lONPB9BG1)
+ - [Demo](https://codepen.io/matuzalemteles/project/full/ZLYzkv/)
 
 ## API
 Sprint's big proposition is to provide a familiar API and simple to implement on any static website.

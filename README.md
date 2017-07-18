@@ -57,6 +57,7 @@ The UMD build is also available on [unpkg](https://unpkg.com):
 ```
 
 ## Usage
+Use from HTML tag.
 ```html
 <script>
   var Sprint = new sprint(
@@ -70,14 +71,25 @@ The UMD build is also available on [unpkg](https://unpkg.com):
   )
 </script>
 ```
+Or use Sprint package.
+```javascript
+import Sprint from 'sprintjs';
 
+const engine = new Sprint({
+  routes: [
+  '*.html',
+  '/site/*'
+  ],
+  enabled: true,
+});
+```
 ## Examples & Demos
- - [Demo](demo) - Check demo folder and start with some http service, for correct operation.
+ - [Demo](https://codesandbox.io/embed/lONPB9BG1)
 
 ## API
 Sprint's big proposition is to provide a familiar API and simple to implement on any static website.
 
-### `sprint(options: Object)`
+### `sprintj(options: Object)`
 Sprint contains the following properties in options:
 
  * `routes`: An array, routes are added to enable Sprint. Use of the `*` before or after the `/` or `.` The mechanism understands and will process anything forward.

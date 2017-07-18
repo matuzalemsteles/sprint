@@ -60,7 +60,7 @@ The UMD build is also available on [unpkg](https://unpkg.com):
 Use from HTML tag.
 ```html
 <script>
-  var Sprint = new sprint(
+  var Sprint = new sprintjs(
     {
       routes: [
         '*.html',

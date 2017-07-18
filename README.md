@@ -77,8 +77,8 @@ import Sprint from 'sprintjs';
 
 const engine = new Sprint({
   routes: [
-  '*.html',
-  '/site/*'
+    '*.html',
+    '/site/*'
   ],
   enabled: true,
 });
